@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agriculture Robot</title>
+</head>
+
+<body>
+    <section id="navigation ">
+        <nav class="nav-bar" id="nav">
+            <div class="nav-container">
+                <ul class="nav-ul">
+                    <div class="logo">
+                        <img src="img/logo.jpg" width="50px" alt="">
+                        <label>| AgroBot |</label>
+                    </div>
+                    <li><a href="./index.html">Controller</a></li>
+                    <li><a href="./monitor.html">Monitor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="streaming">
+                <!-- <iframe width="853" height="550" src="https://www.youtube.com/embed/E6bw0a6Mmx4"
+                    title="Cristiano Ronaldo 100+ WOW Skills 🤯" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> -->
+                <video src="" width="800" height="550"></video>
+            </div>
+            <div class="controller">
+                <button class="btn" id="btn-forward"><span>&#129153;</span></button>
+                <div class="btn-adjust">
+                    <button class="btn" id="btn-left"><span>&#129152;</span></button>
+                    <button class="btn" id="btn-stop"><span>&#11203;</span></button>
+                    <button class="btn" id="btn-rigth"><span>&#129154;</span></button>
+                </div>
+                <button class="btn" id="btn-reverse"><span>&#129155;</span></button>
+                <br>
+                <div class="slidercontainer">
+                    <input type="range" min="0" max="180" value="90" class="slider" id="myRange1">
+                    <br>
+                    <input type="range" min="0" max="180" value="90" class="slider" id="myRange2">
+                </div>
+                <label>Soil Servo:</label>
+                <div class="soil-btn toggle">
+                    <button class="btn1 off-btn" id="soil-off">OFF</button>
+                    <button class="btn1 on-btn" id="soil-on">ON</button>
+                </div>
+                <label>Seeding:</label>
+                <div class="soil-btn toggle">
+                    <button class="btn1 off-btn" id="seeding-off">OFF</button>
+                    <button class="btn1 on-btn" id="seeding-on">ON</button>
+                </div>
+                <label>Ploughing:</label>
+                <div class="soil-btn toggle">
+                    <button class="btn1 off-btn" id="ploughing-off">OFF</button>
+                    <button class="btn1 on-btn" id="ploughing-on">ON</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="../src/index.js"></script>
+</body>
+
+</html>
